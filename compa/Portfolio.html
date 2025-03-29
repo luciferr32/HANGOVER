@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #5f6368; margin: 0; }
+        .navbar { background-color: rgba(0, 0, 0, 0.8); transition: 0.3s; }
+        .navbar .nav-link { color: #fff; transition: 0.3s; }
+        .navbar .nav-link:hover, .navbar .nav-link.active { color: #00bcd4; }
+        .portfolio { color: #00bcd4; text-align: center; padding: 60px 20px; }
+        .portfolio h1 { font-size: 2.5rem; font-weight: bold; margin-bottom: 20px; }
+        .portfolio-buttons .btn { color: #00bcd4; background-color: #2c2f33; border: none; padding: 10px 20px; margin: 5px; transition: 0.3s;  }
+        .portfolio-buttons .btn.active, .portfolio-buttons .btn:hover {  background-color: #00bcd4; color: #fff; }
+        .gallery img {width: 100%; height: 200px; object-fit: cover;  border-radius: 5px; transition: transform 0.3s ease; }
+        .gallery img:hover { transform: scale(1.05);}
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./fotos/fav.png" alt="" height="30" class="me-2">
+            <span class="fw-bold text-white">Portfolio</span>
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Portfolio Section -->
+<section class="portfolio">
+    <h1>Portfolio</h1>
+    <div class="portfolio-buttons">
+        <button class="btn active">ALL</button>
+        <button class="btn">WEB DESIGN</button>
+        <button class="btn">PHOTOGRAPHY</button>
+        <button class="btn">PRODUCT DESIGN</button>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<div class="container">
+    <div class="row gallery">
+        <div class="col-md-4 mb-4">
+            <img src="fotos/01-large.jpg" alt="Image 1">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="fotos/02-large.jpg" alt="Image 2">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="fotos/03-large.jpg" alt="Image 3">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="fotos/04-large.jpg" alt="Image 4">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="fotos/05-large.jpg" alt="Image 5">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="fotos/06-large.jpg" alt="Image 6">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="fotos/07-large.jpg" alt="Image 7">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="fotos/08-large.jpg" alt="Image 8">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="fotos/09-large.jpg" alt="Image 9">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="fotos/10-large.jpg" alt="Image 10">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="fotos/11-large.jpg" alt="Image 10">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="fotos/12-large.jpg" alt="Image 10">
+        </div>
+    </div>
+</div>
+<!-- Contact Section -->
+<section class="contact" style="background: linear-gradient(to bottom, #61c0e5, #88d3e7); padding: 80px 20px; text-align: center;">
+    <div class="container">
+        <h2 style="color: #333; margin-bottom: 20px;">Get In Touch</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+            <form>
+                <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                    <input type="text" class="form-control" placeholder="Name" required style="flex: 1; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                    <input type="email" class="form-control" placeholder="Email" required style="flex: 1; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                </div>
+                <textarea class="form-control" rows="4" placeholder="Message" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 15px;"></textarea>
+                <button type="submit" style="background-color: #333; color: rgb(0, 255, 242); padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">SEND MESSAGE</button>
+            </form>
+        </div>
+        
+        <!-- Social Icons -->
+        <div style="margin-top: 30px;">
+            <a href="#" style="margin: 0 10px; color: #333; font-size: 20px;"><i class="fab fa-facebook"></i></a>
+            <a href="#" style="margin: 0 10px; color: #333; font-size: 20px;"><i class="fab fa-twitter"></i></a>
+            <a href="#" style="margin: 0 10px; color: #333; font-size: 20px;"><i class="fab fa-github"></i></a>
+            <a href="#" style="margin: 0 10px; color: #333; font-size: 20px;"><i class="fab fa-codepen"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Agregar FontAwesome para los íconos -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
